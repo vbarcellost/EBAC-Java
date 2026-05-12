@@ -8,6 +8,8 @@ public class Main {
 
             Tabela tabela = classe.getAnnotation(Tabela.class);
 
+            ObjetoTabela objeto = new ObjetoTabela(tabela.value());
+            
             System.out.println("Nome da tabela: " + tabela.value());
         }
     }
